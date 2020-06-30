@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+        li {
+            width: 200px;
+            text-align:center;
+            display: flex; /* allows align-items to work below */
+            justify-content: center; /* Horizontally centers single-line elements */
+            text-align:center;
+         }
+    </style>
+</head>
+{% load static %}
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-fixed-top" style="position:fixed; width: 100%">
+  <!-- Brand -->
+    <a class="navbar-brand" href="/falcon" style="width: 200px; text-align:center; background-color:grey">
+        Tommu
+    </a>
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="/falcon/introduce/introduction">Introduction</a>
+    </li>
+
+
+    <!-- Dropdown -->
+    <li class="btn-group dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Projects
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="/falcon/projects/datascience/stock/stock">Data Science</a>
+        <a class="dropdown-item" href="/falcon/projects/computation/computation_science">Computational Science</a>
+        <a class="dropdown-item" href="#">Web Frontend</a>
+        <a class="dropdown-item" href="#">Web Backend</a>
+      </div>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="/falcon/award/award" style="width: 200px; text-align:center">Award</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/falcon/resume/resume" style="width: 200px; text-align:center">Resume</a>
+    </li>
+
+  </ul>
+
+</nav>
+
+<div class="main" style="padding-top: 50px">
+    <h1>
+        tom's intro
+        020 03:15:05] "GET /falcon/introduce/introduction HTTP/1.1" 200 123
+[24/Jun/2020 03:18:23] "GET /falcon/ HTTP/1.1" 200 2716
+[24/Jun/2020 03:19:28] "GET /falcon/ HTTP/1.1" 200 2662
+[24/Jun/2020 03:19:38] "GET /falcon/ HTTP/1.1" 200 2716
+introduction
+[24/Jun/2020 03:22:03] "GET /falcon/introduce/introduction HTTP/1.1" 200 123
+[24/Jun/2020 03:23:31] "GET /falcon/ HTTP/1.1" 200 2685
+[24/Jun/2020 03:23:41] "GET /falcon/ HTTP/1.1" 200 2710
+introduction
+[24/Jun/2020 03:26:34] "GET /falcon/introduce/introduction HTTP/1.1" 200 123
+Not Found: /
+[24/Jun/2020 03:31:05] "GET / HTTP/1.1" 404 2028
+[24/Jun/2020 03:31:07] "GET /falcon/ HTTP/1.1" 200 2060
+introduction
+[24/Jun/2020 03:31:14] "GET /falcon/introduce/introduction HTTP/1.1" 200 1936
+introduction
+[24/Jun/2020 03:31:20] "GET /falcon/introduce/introduction HTTP/1.1" 200 1936
+introduction
+[24/Jun/2020 03:31:55] "GET /falcon/introduce/introduction HTTP/1.1" 200 1984
+introduction
+[24/Jun/2020 03:31:56] "GET /falcon/introduce/introduction HTTP/1.1" 200 1984
+[24/Jun/2020 03:32:00] "GET /falcon/ HTTP/1.1" 200 2060
+introduction
+[24/Jun/2020 03:32:01] "GET /falcon/introduce/introduction HTTP/1.1" 200 1984
+[24/Jun/2020 03:32:24] "GET /falcon/ HTTP/1.1" 200 2074
+[24/Jun/2020 03:32:25] "GET /falcon/ HTTP/1.1" 200 2074
+[24/Jun/2020 03:32:53] "GET /falcon/ HTTP/1.1" 200 2072
+introduction
+[24/Jun/2020 03:33:01] "GET /falcon/introduce/introduction HTTP/1.1" 200 1984
+introduction
+[24/Jun/2020 03:33:18] "GET /falcon/introduce/introduction HTTP/1.1" 200 1997
+introduction
+[24/Jun/2020 03:33:19] "GET /falcon/introduce/introduction HTTP/1.1" 200 1997
+[24/Jun/2020 03:33:20] "GET /falcon/ HTTP/1.1" 200 2072
+introduction
+[24/Jun/2020 03:33:21] "GET /falcon/introduce/introduction HTTP/1.1" 200 1997
+introduction
+[24/Jun/2020 03:33:27] "GET /falcon/introduce/introduction HTTP/1.1" 200 1998
+introduction
+[24/Jun/2020 03:33:28] "GET /falcon/introduce/introduction HTTP/1.1" 200 1998
+introduction
+[24/Jun/2020 03:33:38] "GET /falcon/introduce/introduction HTTP/1.1" 200 1996
+introduction
+[24/Jun/2020 03:33:58] "GET /falcon/introduce/introduction HTTP/1.1" 200 2003
+introduction
+[24/Jun/2020 03:33:59] "GET /falcon/introduce/introduction HTTP/1.1" 200 2003
+introduction
+[24/Jun/2020 03:34:00] "GET /falcon/introduce/introduction HTTP/1.1" 200 2003
+
+    </h1>
+</div>
+
+
+</body>
+</html>

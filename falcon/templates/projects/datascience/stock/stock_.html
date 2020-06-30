@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>Title</title>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row" style="height: 75px">
+            <div class="col" style="text-align:center;">
+                <h2>Stock Simulator</h2>
+            </div>
+        </div>
+
+        <div class="row" style="height: 100px">
+            <div class="col">
+                <h6>
+                    This python program is capable of getting stock name and code from csv file from Nasdaq. It uses the csv file and put the stock symbols into MySQL DataBase. Then, the program uses python API to get OHLC(open, high, low, close) prices. The prices are inserted into the database as well. The ultimate goal is to develope a tensorflow-based machine learning model in order to build a quantitative analysis model. The code for this post is on my GitHub account. You are welcome to use and modify the code. Thank you. https://github.com/tjeong117/getStock I will put some parts of the codes to demonstrate the functionality and purpose of them. The code is devided into two classes. One is to get stock prices and the other is to display the graph.
+                </h6>
+            </div>
+        </div>
+
+        <div class="row" style="height: 400px">
+            <div class="col-sm-6">
+                <img src="/static/projects/datascience/stock.png" width="100%" >
+            </div>
+            <div class="col-sm-6">
+                <img src="/static/projects/datascience/stock_db.png" width="100%">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col" align="center">
+                <a href="./stock_demo">
+                    <img src="/static/projects/datascience/button.jpg" width="5%%" >
+                </a>
+            </div>
+        </div>
+
+    <!--table-- border="1" width="100%">
+        <tr>
+            <td width="50%">
+               STOCK
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                This python program is capable of getting stock name and code from csv file from Nasdaq. It uses the csv file and put the stock symbols into MySQL DataBase. Then, the program uses python API to get OHLC(open, high, low, close) prices. The prices are inserted into the database as well. The ultimate goal is to develope a tensorflow-based machine learning model in order to build a quantitative analysis model.
+
+  The code for this post is on my GitHub account. You are welcome to use and modify the code. Thank you.  https://github.com/tjeong117/getStock
+
+I will put some parts of the codes to demonstrate the functionality and purpose of them. The code is devided into two classes. One is to get stock prices and the other is to display the graph.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="/static/projects/datascience/stock.png" width="100%" >
+            </td>
+            <td>
+                            <img src="/static/projects/datascience/stock_db.png" width="100%" >
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="middle"> demo
+                <a href="stock_demo">
+                    <img src="/static/projects/datascience/button.jpg" width="5%%" >
+                </a>
+            </td>
+        </tr>
+    </table-->
+</div>
+</body>
+</html>

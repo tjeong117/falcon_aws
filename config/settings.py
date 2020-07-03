@@ -76,12 +76,12 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'port_db',  # database 이름을 적어준다.
-        'HOST': 'localhost', # host 서버이름을 쓰면 된다.
+        'NAME': 'test_aws',  # database 이름을 적어준다.
+        'HOST': '18.189.28.13', # host 서버`이름을 쓰면 된다.
         '``PORT': '3306',
         'USER': 'root', # DB에 접근할 user id를 적는다.
-        'PASSWORD': 'won12060324', # DB에 접근할 password를 적는다.
-        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'PASSWORD': 'root', # DB에 접근할 password를 적는다.
+       # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -121,9 +121,11 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-
+STATIC_DIR = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = [
+        STATIC_DIR,
+        ]
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_aws')
 
 X_FRAME_OPTIONS = 'ALLOW'

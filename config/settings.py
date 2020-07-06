@@ -23,9 +23,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'o7%kv#)-+(=!k_n%mjfyjhatntx=$$0%((n0bt9*-v=&^+8-%l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['.compute.amazonaws.com']
+ALLOWED_HOSTS = ['.compute.amazonaws.com',
+        '.tomjeong.com']
 
 
 # Application definition
@@ -76,7 +77,8 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'test_aws',  # database 이름을 적어준다.
+        'NAME': 'falcon_brain_db',  # database 이름을 적어준다.
+
         'HOST': '18.189.28.13', # host 서버`이름을 쓰면 된다.
         '``PORT': '3306',
         'USER': 'root', # DB에 접근할 user id를 적는다.

@@ -18,7 +18,7 @@ pytz==2020.1
 requests==2.24.0
 six==1.15.0
 sqlparse==0.3.1
-urllib3==1.25.9
+urllib3==1.26.5
 zope.interface==5.1.0
 asgiref==3.2.9
 certifi==2020.4.5.2
@@ -46,5 +46,5 @@ requests==2.24.0
 six==1.15.0
 SQLAlchemy==1.3.17
 sqlparse==0.3.1
-urllib3==1.25.9
+urllib3==1.26.5
 zope.interface==5.1.0
